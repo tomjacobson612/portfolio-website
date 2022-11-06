@@ -9,19 +9,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img class = "banner" src = "images/milky-way-starry-sky-night-sky-star-956999.jpeg" alt="Banner for Navigation Bar">
+    <header>
+      <img
+        class="banner"
+        src="images/desk2.jpg"
+        alt="Banner for Navigation Bar"
+      />
+    </header>
     <nav class="nav-bar">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="" class="nav-link">Element1</a>
+          <a href="#about" class="nav-link about-link">About Me</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">Element2</a>
+          <a href="#work" class="nav-link work-experience-link">Work Experience</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">Element3</a>
+          <a href="#projects" class="nav-link projects-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link contact-link">Contact Me</a>
         </li>
       </ul>
     </nav>
+    <section class="grid-container">
+      <div class="grid-item about">
+        <p class="about-text" id="about">TEXT</p>
+      </div>
+      <div class="grid-item work" id="work">Work Experience</div>
+      <div class="grid-item projects" id="projects">Projects</div>
+      <div class="grid-item contact" id="contact">Contact Me</div>
+    </section>
   </body>
 </html>

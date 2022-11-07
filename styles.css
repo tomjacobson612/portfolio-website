@@ -3,9 +3,36 @@
   padding: 0%;
 }
 
+.content {
+  margin: 0 1em 0 1em;
+}
+
 .about {
   grid-area: about;
   color: #fbfaf5;
+}
+
+.about-header {
+  margin: 1em 0 1em 0;
+  text-align: center;
+  color: #fbfaf5;
+}
+
+.about-pic {
+  display: block;
+  grid-area: picture;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.about-text {
+  text-indent: 2em;
+  background-color: #252525;
+  border-radius: 2%;
+  padding: 0 1em 0 1em;
 }
 
 .work {
@@ -53,7 +80,7 @@ body {
   height: 100%;
   color: #fbfaf5;
   text-decoration: none;
-  padding: 25px;
+  padding: 15px;
 }
 
 .nav-link:hover {
@@ -68,21 +95,22 @@ body {
   border: 5px solid orange;
 }
 
-.grid-container {
+/* .grid-container {
   justify-items: center;
   display: grid;
   height: 97vh;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 3fr 3fr 3fr 3fr;
   gap: 5px;
   grid-template-areas:
-    "about"
-    "work"
-    "projects"
-    "contact";
-}
+    ". picture ."
+    ". about about ."
+    ". work work ."
+    ". projects projects ."
+    ". contact contact .";
+} */
 @media (min-width: 415px) and (max-width: 768px) {
-  .grid-container {
+  /* .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 3fr 3fr 3fr;
     grid-template-areas:
@@ -90,7 +118,7 @@ body {
       "work work"
       "projects projects"
       "contact contact";
-  }
+  } */
 
   .banner {
     width: 100%;
@@ -99,16 +127,30 @@ body {
     vertical-align: middle;
   }
 }
-
 @media (min-width: 769px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
+  /* .grid-container {
+    grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-      "about about about"
+      "picture about ."
       "work work work"
       "projects projects projects"
       "contact contact contact";
+  } */
+}
+
+@media (min-width: 1024px) {
+  /* .grid-container {
+    grid-template-columns: 1fr 2fr 4fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+      ". picture about ."
+      ". work work ."
+      ". projects projects ."
+      ". contact contact .";
+  } */
+  .content{
+    margin: 0 1em 0 1em;
   }
 
   .banner {
@@ -116,5 +158,38 @@ body {
     height: 200px;
     object-fit: cover;
     vertical-align: middle;
+  }
+
+  .about {
+    display: inline-flex;
+    margin-top: 2em;
+  }
+
+  .about-header {
+    margin: 1em 0 1em 0;
+    text-align: center;
+    color: #fbfaf5;
+  }
+
+  .about-pic {
+    margin: 1em 1em;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .nav-link {
+    display: block;
+    height: 100%;
+    color: #fbfaf5;
+    text-decoration: none;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1300px){
+  .content {
+    margin: 0 15% 0 15%;
   }
 }

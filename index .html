@@ -19,7 +19,7 @@
     <nav class="nav-bar">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#about" class="nav-link about-link">About Me</a>
+          <a href="#about-photo" class="nav-link about-link">About Me</a>
         </li>
         <li class="nav-item">
           <a href="#work" class="nav-link work-experience-link"
@@ -32,57 +32,101 @@
         <li class="nav-item">
           <a href="#contact" class="nav-link contact-link">Contact Me</a>
         </li>
+        <li class="nav-item github">
+          <a
+            class="img-link"
+            href="https://github.com/tomjacobson612/"
+            target="_blank"
+            ><img
+              class="github-logo"
+              src="images/GitHub-Mark-Light-64px.png"
+              alt="github icon"
+          /></a>
+        </li>
+        <li class="nav-item linkedin">
+          <a
+            class="img-link"
+            href="https://www.linkedin.com/in/tom-jacobson-396885141/"
+            target="_blank"
+            ><img
+              class="linkedin-logo"
+              src="images/LI-In-Bug.png"
+              alt="linked in icon"
+          /></a>
+        </li>
       </ul>
     </nav>
     <div class="content">
-    <section class="about-me">
-      <div class="grid-item about">
-        <img class="about-pic" src="images/me.jpg" alt="Picture of Tom Jacobson" />
-        <div class="about-text">
-          <h1 class="about-header">Tom Jacobson (He/Him)</h1>
-          <p class=>
-            My name is Tom Jacobson and I am currently completing my master's
-            degree in computer science at Portland State University, with a
-            focus in software engineering. My previous background consists of a
-            Bachelor of Business Administration from Western Washington
-            University and time spent in retail management post graduation. </p> <br>
-            <p> I am fluent in Python and have intermediate experience with C++, C, Java,
-            and Javascript. This website was designed using a combination of
-            HTML, CSS, and Javascript. Other projects I have worked on include a
-            discord trivia bot, fake news prediction program, and a sudoku
-            solving program that generates a random sudoku board using an API
-            and solves the given board when a button is pressed. Each of those
-            projects were written in python. </p> <br>
-            <p>I am currently focused gaining professional
-            experience and on finishing my degree (estimated graduation date
-            June 2024). Below you will find a detailed work history, list
-            of classes taken, and links to the aforementioned projects.</p> <br>
+      <section class="about-me">
+        <div class="about">
+          <img
+            class="about-pic"
+            src="images/me.jpg"
+            alt="Picture of Tom Jacobson"
+            id="about-photo"
+          />
+          <div class="about-text">
+            <h1 class="about-header">Tom Jacobson (He/Him)</h1>
+            <p>
+              My name is Tom Jacobson and I am currently completing my master's
+              degree in computer science at Portland State University, with a
+              focus in software engineering. My previous background consists of
+              a Bachelor of Business Administration from Western Washington
+              University and time spent in retail management post graduation.
+              <br />
+              <br />
+              I am fluent in Python and have intermediate experience with C++,
+              C, Java, and Javascript. This website was designed using a
+              combination of HTML, CSS, and Javascript. Other projects I have
+              worked on include a discord trivia bot, fake news prediction
+              program, and a sudoku solving program that generates a random
+              sudoku board using an API and solves the given board. Additionally
+              the I designed a graphical user interface for the sudoku board so
+              that the user can see the board before and after solving, as well
+              as control when the solve function runs with the press of a
+              button. These projects were written in Python. <br />
+              <br />
+              I am currently focused gaining professional experience and on
+              finishing my degree (estimated graduation date June 2024). Below
+              you will find a detailed work history, list of classes taken, and
+              links to the aforementioned projects.
+            </p>
+          </div>
         </div>
-        <!-- <p class="about-text">
-          I am fluent in Python and have intermediate experience with C++, C,
-          Java, and Javascript. This websited was designed using a combination
-          of HTML, CSS, and Javascript. Other projects I have worked on include
-          a discord trivia bot, fake news prediction program, and a sudoku
-          solving program that generates a random sudoku board using an API and
-          solves the given board when a button is pressed. Each of those
-          projects were written in python. As I finish my degree I look forward
-          continue bringing that same drive and excitement for learning to my
-          professional career. The ability create applications that fill a need
-          for the user is an amazing feeling.
-        </p>
-        <p class="about-text">
-          I look forward to utilizing that passion for development in my career
-          outside of the classroom. I am currently focused gaining professional
-          experience and on finishing my degree (estimated graduation date June
-          2024). Below you will find a brief history of my previous work and
-          classes taken, as well as some links to projects I have worked on
-          since beginning the computer science degree.
-        </p> -->
+      </section>
+      <div class="portfolio">
+        <div class="work" id="work">
+          <h1 class="work-header">Work Experience</h1>
+          <table class="work-history">
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>Portland State University</td>
+              <td>CS Tutor</td>
+              <td>1/1/22 to Present</td>
+            </tr>
+          </table>
+        </div>
+        <div class="projects" id="projects">
+          <h1 class="project-header">Projects</h1>
+          <table class="project-history">
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td>Portland State University</td>
+              <td>CS Tutor</td>
+              <td>1/1/22 to Present</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <!-- <div class="grid-item work" id="work">Work Experience</div>
-      <div class="grid-item projects" id="projects">Projects</div>
-      <div class="grid-item contact" id="contact">Contact Me</div> -->
-    </section>
-  </div>
+    </div>
+    <div class="contact" id="contact">Contact Me</div>
   </body>
 </html>

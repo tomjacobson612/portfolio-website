@@ -1,57 +1,12 @@
 * {
   margin: 0;
   padding: 0%;
-}
-
-.content {
-  margin: 0 1em 0 1em;
-}
-
-.about {
-  grid-area: about;
-  color: #fbfaf5;
-}
-
-.about-header {
-  margin: 1em 0 1em 0;
-  text-align: center;
-  color: #fbfaf5;
-}
-
-.about-pic {
-  display: block;
-  grid-area: picture;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 1em;
-}
-
-.about-text {
-  text-indent: 2em;
-  background-color: #252525;
-  border-radius: 2%;
-  padding: 0 1em 0 1em;
-}
-
-.work {
-  grid-area: work;
-  color: #fbfaf5;
-}
-
-.projects {
-  grid-area: projects;
-  color: #fbfaf5;
-}
-
-.contact {
-  grid-area: contact;
-  color: #fbfaf5;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 body {
   background-color: #121212;
+  color: #fbfaf5;
 }
 
 .banner {
@@ -70,20 +25,19 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #252525;
+  background-color: #004040;
   list-style: none;
 }
 
 .nav-link {
   display: block;
-  /* width: 100%; */
   height: 100%;
-  color: #fbfaf5;
   text-decoration: none;
   padding: 15px;
+  color: #fbfaf5;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   background-color: green;
 }
 
@@ -93,22 +47,88 @@ body {
 
 .nav-link:focus {
   border: 5px solid orange;
+} */
+
+.github {
+  display: none;
 }
 
-/* .grid-container {
-  justify-items: center;
-  display: grid;
-  height: 97vh;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 3fr 3fr 3fr 3fr;
-  gap: 5px;
-  grid-template-areas:
-    ". picture ."
-    ". about about ."
-    ". work work ."
-    ". projects projects ."
-    ". contact contact .";
-} */
+.linkedin {
+  display: none;
+}
+
+.content {
+  margin: 0 1em 0 1em;
+}
+
+.about-header {
+  margin: 1em 0 1em 0;
+  text-align: center;
+  /* color: yellow; */
+}
+
+.about-pic {
+  display: block;
+  grid-area: picture;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.about-text {
+  text-indent: 2em;
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 0 1em 1em 1em;
+}
+.work {
+  grid-area: work;
+}
+.projects {
+  grid-area: projects;
+}
+
+.work,
+.projects {
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em 0 0 0;
+}
+
+.work-header,
+.project-header {
+  padding: 1em 0 1em 0;
+  text-align: center;
+  /* text-align: center; */
+  /* color: yellow; */
+}
+
+.work-history, .project-history{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+tr {
+  border: solid;
+  border-width: 1px 0;
+}
+
+td {
+  padding: 1em 1em 0 0;
+}
+
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+.contact {
+}
+
 @media (min-width: 415px) and (max-width: 768px) {
   /* .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -140,19 +160,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  /* .grid-container {
-    grid-template-columns: 1fr 2fr 4fr 1fr;
-    grid-template-rows: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-      ". picture about ."
-      ". work work ."
-      ". projects projects ."
-      ". contact contact .";
-  } */
-  .content{
-    margin: 0 1em 0 1em;
-  }
-
   .banner {
     width: 100%;
     height: 200px;
@@ -160,35 +167,62 @@ body {
     vertical-align: middle;
   }
 
+  .nav-link {
+    padding: 25px;
+  }
+
+  .github {
+    display: block;
+    justify-content: center;
+  }
+
+  .linkedin {
+    display: block;
+    justify-content: center;
+  }
+
+  .github-logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px 25px 0 0;
+  }
+
+  .linkedin-logo {
+    height: 50px;
+    width: 60 px;
+    margin: 5px 25px 0 0;
+  }
+
+  .content {
+    margin: 0 1em 0 1em;
+  }
+
   .about {
     display: inline-flex;
     margin-top: 2em;
-  }
-
-  .about-header {
-    margin: 1em 0 1em 0;
-    text-align: center;
-    color: #fbfaf5;
   }
 
   .about-pic {
     margin: 1em 1em;
     height: 350px;
     width: 350px;
-    border-radius: 50%;
-    display: flex;
   }
 
-  .nav-link {
-    display: block;
-    height: 100%;
-    color: #fbfaf5;
-    text-decoration: none;
-    padding: 25px;
+  .portfolio {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr;
+    gap: 5px;
+    grid-template-areas: "work projects";
+  }
+  .work,
+  .projects {
+    /* margin-left: 15%;
+    margin-right: 15%; */
   }
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1300px) {
   .content {
     margin: 0 15% 0 15%;
   }

@@ -106,12 +106,13 @@ body {
   /* color: yellow; */
 }
 
-.work-history, .project-history{
+.work-history,
+.project-history {
   border-collapse: collapse;
   margin: 0 auto;
 }
+
 tr {
-  border: solid;
   border-width: 1px 0;
 }
 
@@ -120,13 +121,24 @@ td {
 }
 
 tr:first-child {
+  border: solid;
+  border-width: 1px 0;
   border-top: none;
 }
-tr:last-child {
-  border-bottom: none;
+.resume {
+  margin-top: 1em;
+  text-align: center;
+  font-size: x-large;
 }
 
-.contact {
+.project-link,
+.resume-link {
+  color: #0096ff;
+  text-decoration: none;
+}
+
+.project-link:hover, .resume-link:hover {
+  color: orange;
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -219,6 +231,12 @@ tr:last-child {
   .projects {
     /* margin-left: 15%;
     margin-right: 15%; */
+  }
+
+  .resume {
+    margin-top: 3em;
+    text-align: center;
+    font-size: x-large;
   }
 }
 

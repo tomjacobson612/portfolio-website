@@ -7,6 +7,7 @@
 body {
   background-color: #121212;
   color: #fbfaf5;
+  margin-bottom: 2em;
 }
 
 .banner {
@@ -70,15 +71,15 @@ body {
 .about-pic {
   display: block;
   grid-area: picture;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 175px;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 1em;
 }
 
 .about-text {
-  text-indent: 2em;
+  /* text-indent: 2em; */
   background-color: #252525;
   border-radius: 10px;
   padding: 0 1em 1em 1em;
@@ -158,6 +159,11 @@ tr:first-child {
     object-fit: cover;
     vertical-align: middle;
   }
+
+  .about-pic{
+    height: 300px;
+    width: 225px;
+  }
 }
 @media (min-width: 769px) {
   /* .grid-container {
@@ -217,7 +223,7 @@ tr:first-child {
   .about-pic {
     margin: 1em 1em;
     height: 350px;
-    width: 350px;
+    width: 300px;
   }
 
   .portfolio {

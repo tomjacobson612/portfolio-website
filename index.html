@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Jacobson's portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="banner"
+        src="images/desk2.jpg"
+        alt="Banner for Navigation Bar"
+      />
+    </header>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about-photo" class="nav-link about-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#work" class="nav-link work-experience-link"
+            >Work Experience</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link projects-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="form.html" class="nav-link contact-link">Contact Me</a>
+        </li>
+        <li class="nav-item github">
+          <a
+            class="img-link"
+            href="https://github.com/tomjacobson612/"
+            target="_blank"
+            ><img
+              class="github-logo"
+              src="images/GitHub-Mark-Light-64px.png"
+              alt="github icon"
+          /></a>
+        </li>
+        <li class="nav-item linkedin">
+          <a
+            class="img-link"
+            href="https://www.linkedin.com/in/tom-jacobson-396885141/"
+            target="_blank"
+            ><img
+              class="linkedin-logo"
+              src="images/LI-In-Bug.png"
+              alt="linked in icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="content">
+        <section class="about-me">
+          <div class="about">
+            <img
+              class="about-pic"
+              src="images/tom3.jpg"
+              alt="Picture of Tom Jacobson"
+              id="about-photo"
+            />
+            <div class="about-text">
+              <h1 class="about-header">Tom Jacobson (He/Him)</h1>
+              <p>
+                My name is Tom Jacobson and I am currently completing my
+                master's degree in computer science at Portland State
+                University, with a focus in software engineering. My previous
+                background consists of a Bachelor of Business Administration
+                from Western Washington University and time spent in retail
+                management post graduation.
+                <br />
+                <br />
+                I am fluent in Python and have intermediate experience with C++,
+                C, Java, and Javascript. This website was designed using a
+                combination of HTML, CSS, and Javascript. Other projects I have
+                worked on include a discord trivia bot, fake news prediction
+                program, and a sudoku solving program that generates a random
+                sudoku board using an API and solves the given board.
+                Additionally the I designed a graphical user interface for the
+                sudoku board so that the user can see the board before and after
+                solving, as well as control when the solve function runs with
+                the press of a button. These projects were primarily written in
+                Python. <br />
+                <br />
+                I am currently focused gaining professional devlopment and
+                finishing my degree (estimated graduation date June 2024). Below
+                you will find a detailed work history, list of classes taken,
+                and links to the aforementioned projects.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="portfolio">
+          <div class="work" id="work">
+            <h1 class="work-header">Work Experience</h1>
+            <table class="work-history">
+              <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Date</th>
+              </tr>
+              <tr>
+                <td>Portland State University</td>
+                <td>CS Tutor</td>
+                <td>January 2022 - Present</td>
+              </tr>
+              <tr>
+                <td>Mud Bay</td>
+                <td>Fourth Key</td>
+                <td>August 2017 - March 2021</td>
+              </tr>
+              <tr>
+                <td>Manager of Online Sales</td>
+                <td>Dark Tower Games</td>
+                <td>June 2016 - August 2017</td>
+              </tr>
+            </table>
+            <div class="resume">
+              <a
+                class="resume-link"
+                href="images/Tom Jacobson Resume.pdf"
+                target="_blank"
+                >Full Resume (PDF)</a
+              >
+            </div>
+          </div>
+          <div class="projects" id="projects">
+            <h1 class="project-header">Projects</h1>
+            <table class="project-history">
+              <tr>
+                <th>Project</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="project-link"
+                    href="https://github.com/tomjacobson612/Foodie_Bot"
+                    target="_blank"
+                    >Trivia Bot</a
+                  >
+                </td>
+                <td>
+                  Discord bot written in python using Discord Developer API and
+                  Pycord. Core features include a trivia game, dice roller, and
+                  bot interaction with user messages. Hosted with Google Cloud
+                  compute engine.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="project-link"
+                    href="https://github.com/tomjacobson612/Sudoku-Solver"
+                    target="_blank"
+                    >Sudoku Solver</a
+                  >
+                </td>
+                <td>
+                  Python program utilizing a backtracking algorithm to solve a
+                  given sudoku board. Core features inlude a backtracking
+                  algorithm and graphical user interface. Utilizes Sugoku API to
+                  generate random sudoku boards at run time.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="project-link"
+                    href="https://github.com/tomjacobson612/fake_news_classifier"
+                    target="_blank"
+                    >Fake News Classifier</a
+                  >
+                </td>
+                <td>
+                  Predicts the validity of news articles based on the text of
+                  the article. Trained on a sample data set containing both real
+                  and fake news articles.Core technologies: TF-IDF vectorizer
+                  and Passive Aggressive Classifier from Pandas and Sklearn
+                  libraries.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

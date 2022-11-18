@@ -38,18 +38,6 @@ body {
   color: #fbfaf5;
 }
 
-/* .nav-link:hover {
-  background-color: green;
-}
-
-.nav-link:active {
-  background-color: orange;
-}
-
-.nav-link:focus {
-  border: 5px solid orange;
-} */
-
 .github {
   display: none;
 }
@@ -65,7 +53,6 @@ body {
 .about-header {
   margin: 1em 0 1em 0;
   text-align: center;
-  /* color: yellow; */
 }
 
 .about-pic {
@@ -79,7 +66,6 @@ body {
 }
 
 .about-text {
-  /* text-indent: 2em; */
   background-color: #252525;
   border-radius: 10px;
   padding: 0 1em 1em 1em;
@@ -103,8 +89,6 @@ body {
 .project-header {
   padding: 1em 0 1em 0;
   text-align: center;
-  /* text-align: center; */
-  /* color: yellow; */
 }
 
 .work-history,
@@ -138,21 +122,44 @@ tr:first-child {
   text-decoration: none;
 }
 
-.project-link:hover, .resume-link:hover {
+.project-link:hover,
+.resume-link:hover {
   color: orange;
 }
 
-@media (min-width: 415px) and (max-width: 768px) {
-  /* .grid-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-      "about about"
-      "work work"
-      "projects projects"
-      "contact contact";
-  } */
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
 
+form {
+  width: 450px;
+}
+
+.form-header {
+  padding: 20px;
+  text-align: center;
+}
+.row {
+  margin-right: 0;
+}
+
+.recipient {
+  background-color: #004040;
+  color: #fbfaf5;
+}
+
+.recipient:hover {
+  background-color: #1b7070;
+  color: #fbfaf5;
+}
+
+.contact-info {
+  display: none;
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
   .banner {
     width: 100%;
     height: 150px;
@@ -160,21 +167,10 @@ tr:first-child {
     vertical-align: middle;
   }
 
-  .about-pic{
+  .about-pic {
     height: 300px;
     width: 225px;
   }
-}
-@media (min-width: 769px) {
-  /* .grid-container {
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-      "picture about ."
-      "work work work"
-      "projects projects projects"
-      "contact contact contact";
-  } */
 }
 
 @media (min-width: 1024px) {
@@ -232,11 +228,6 @@ tr:first-child {
     grid-template-rows: 3fr;
     gap: 5px;
     grid-template-areas: "work projects";
-  }
-  .work,
-  .projects {
-    /* margin-left: 15%;
-    margin-right: 15%; */
   }
 
   .resume {
